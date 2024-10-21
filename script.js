@@ -16,7 +16,7 @@ function getComputeChoice(){
 }
 function getHumanChoice(){
     let userChoice = prompt("Elige piedra,papel o tijeras").toLowerCase();
-    if (userChoice === "piedra" || userChoice === "papel" || userChoice === "tijeras"){
+    if (userChoice === "rock" || userChoice === "paper" || userChoice === "scissors"){
         return userChoice;
       }else{
         console.log("Opcion invalida");
