@@ -23,4 +23,20 @@ function getHumanChoice(){
         return getHumanChoice();
       }
 }
-console.log(getHumanChoice());
+
+function playRound(){
+    userChoice = userChoice.toLowerCase();
+
+    // Compare the user choice with the computer choice
+    if (userChoice === computerChoice){
+        console.log("Empate");
+    }else if ((userChoice ==="rock" && computerChoice === "scissors") ||
+             (userChoice ==="paper" && computerChoice === "rock") ||
+             (userChoice ==="scissors" && computerChoice === "paper")
+            ){
+                humanScore++;
+                console.log("El humano gana");
+            }else{ computerScore ++;
+                console.log("El ordenador gana");
+            }
+}
