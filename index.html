@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First JavaScript Project</title>
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My First JavaScript Project</h1>
+
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div class="container">
+        <div class="choices">
+            <button onclick="playGame('rock')">Rock</button>
+            <button onclick="playGame('paper')">Paper</button>
+            <button onclick="playGame('scissors')">Scissors</button>
+        </div>
+        <div class="result" id="result">Make your choice!</div>
+        <div class="score" id="score">Human: 0 - Computer: 0</div>
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>
