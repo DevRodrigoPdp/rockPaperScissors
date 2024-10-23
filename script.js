@@ -66,5 +66,4 @@ function playGame() {
     }
 }
 
-// Call the function to play the full game
-playGame();
+
